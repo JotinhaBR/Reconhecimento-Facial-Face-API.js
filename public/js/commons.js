@@ -73,7 +73,7 @@ function getBestMatch(descriptorsByClass, queryDescriptor) {
         className
       })
     )
-    .reduce((best, curr) => best.distance < curr.distance ? best : curr)
+    .reduce((best, curr) => best.distance < curr.distance ? best : curr, or = '')
 }
 
 function renderNavBar(navbarId, exampleUri) {
